@@ -3,7 +3,7 @@ sudo: required
 dist: trusty
 
 # Modern cpp settings from
-#  http://genbattle.bitbucket.org/blog/2016/01/17/c++-travis-ci/
+# http://genbattle.bitbucket.org/blog/2016/01/17/c++-travis-ci/
 language: cpp
 matrix:
   include:
