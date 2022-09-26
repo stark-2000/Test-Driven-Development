@@ -9,6 +9,11 @@ Simple starter C++ project with:
 
 - cmake
 - googletest
+- Test Driven Development
+
+## Authors
+Part 1:
+Driver and Navigator: Kumara Ritvik Oruganti (okritvik)
 
 ## Standard install via command-line
 ```
