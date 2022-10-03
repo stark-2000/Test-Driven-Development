@@ -12,12 +12,12 @@ matrix:
       addons:
         apt:
           sources:
-          	- sourceline: 'ppa:chris-lea/redis-server'
+            - sourceline: 'ppa:chris-lea/redis-server'
             - ubuntu-toolchain-r-test
             - george-edison55-precise-backports
           packages:
-          	- redis-tools
-          	- redis-server
+            - redis-tools
+            - redis-server
             - g++-5
             - cmake
             - cmake-data
