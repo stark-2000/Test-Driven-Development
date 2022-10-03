@@ -1,4 +1,4 @@
-# C++ Boilerplate
+# C++ Test Driven Development Group 13
 [![Build Status](https://app.travis-ci.com/okritvik/Test-Driven-Development.svg?branch=master)](https://app.travis-ci.com/github/okritvik/Test-Driven-Development)
 [![Coverage Status](https://coveralls.io/repos/github/okritvik/Test-Driven-Development/badge.svg?branch=master)](https://coveralls.io/github/okritvik/Test-Driven-Development?branch=master)
 ---
