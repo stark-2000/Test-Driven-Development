@@ -1,6 +1,6 @@
 # We need a decent ubuntu dist
 sudo: required
-dist: trusty
+dist: focal
 
 # Modern cpp settings from
 # http://genbattle.bitbucket.org/blog/2016/01/17/c++-travis-ci/
@@ -12,9 +12,12 @@ matrix:
       addons:
         apt:
           sources:
+          	- sourceline: 'ppa:chris-lea/redis-server'
             - ubuntu-toolchain-r-test
             - george-edison55-precise-backports
           packages:
+          	- redis-tools
+          	- redis-server
             - g++-5
             - cmake
             - cmake-data
