@@ -24,10 +24,10 @@ cd build
 cmake ..
 make
 Run tests: ./test/cpp-test
-Run program: ./app/shell-app
+Run program: ./app/my_app
 ```
 
-## Building for code coverage (for assignments beginning in Week 4)
+## Building for code coverage
 ```
 sudo apt-get install lcov
 cmake -D COVERAGE=ON -D CMAKE_BUILD_TYPE=Debug ../
@@ -36,6 +36,14 @@ make code_coverage
 ```
 This generates a index.html page in the build/coverage sub-directory that can be viewed locally in a web browser.
 
+## Command to check Google Style
+```
+cpplint main.cpp > ./../results/cpplint_result.txt
+```
+## Command to run static code analysis
+```
+cppcheck --enable=all --std=c++17 --suppress=missingIncludeSystem . --suppress=unmatchedSuppression $( find . -name *.cpp | grep -vE -e "^./build/" ) --force --output-file=./results/report.txt
+```
 ## Working with Eclipse IDE ##
 
 ## Installation
