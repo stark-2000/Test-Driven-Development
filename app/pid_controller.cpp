@@ -20,7 +20,8 @@ PID_Controller::PID_Controller() {
     PID_Controller::initial_vel = 0.0;
 }
 
-PID_Controller::PID_Controller(double kp, double ki, double kd, double time_step) {
+PID_Controller::PID_Controller(double kp, double ki, double kd,
+                                double time_step) {
     PID_Controller::kp = kp;
     PID_Controller::kd = kd;
     PID_Controller::ki = ki;
