@@ -37,10 +37,12 @@ make code_coverage
 This generates a index.html page in the build/coverage sub-directory that can be viewed locally in a web browser.
 
 ## Command to check Google Style
+From the app directory run the below command
 ```
-cpplint main.cpp > ./../results/cpplint_result.txt
+cpplint main.cpp pid_controller.cpp > ./../results/cpplint_result.txt
 ```
 ## Command to run static code analysis
+From the Test-Driven-Development folder, run the below command
 ```
 cppcheck --enable=all --std=c++17 --suppress=missingIncludeSystem . --suppress=unmatchedSuppression $( find . -name *.cpp | grep -vE -e "^./build/" ) --force --output-file=./results/report.txt
 ```

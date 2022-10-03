@@ -1,0 +1,524 @@
+app/main.cpp:18:12: style: The scope of the variable 'dt' can be reduced. [variableScope]
+    double dt;
+           ^
+app/main.cpp:20:12: style: The scope of the variable 'kp' can be reduced. [variableScope]
+    double kp;
+           ^
+app/main.cpp:21:12: style: The scope of the variable 'kd' can be reduced. [variableScope]
+    double kd;
+           ^
+app/main.cpp:22:12: style: The scope of the variable 'ki' can be reduced. [variableScope]
+    double ki;
+           ^
+app/pid_controller.cpp:14:17: warning: Member variable 'PID_Controller::required_vel' is not initialized in the constructor. [uninitMemberVar]
+PID_Controller::PID_Controller() {
+                ^
+app/pid_controller.cpp:23:17: warning: Member variable 'PID_Controller::required_vel' is not initialized in the constructor. [uninitMemberVar]
+PID_Controller::PID_Controller(double kp, double ki, double kd,
+                ^
+app/pid_controller.cpp:23:17: warning: Member variable 'PID_Controller::initial_vel' is not initialized in the constructor. [uninitMemberVar]
+PID_Controller::PID_Controller(double kp, double ki, double kd,
+                ^
+vendor/googletest/googlemock/test/gmock-actions_test.cc:86:1: error: syntax error [syntaxError]
+TEST(BuiltInDefaultValueTest, IsNullForPointerTypes) {
+^
+vendor/googletest/googlemock/test/gmock-cardinalities_test.cc:63:1: error: syntax error [syntaxError]
+TEST(CardinalityTest, IsDefaultConstructable) {
+^
+vendor/googletest/googlemock/test/gmock-generated-actions_test.cc:1125:39: error: syntax error [syntaxError]
+                HAS_1_TEMPLATE_PARAMS(template <typename Pointee> class,
+                                      ^
+vendor/googletest/googlemock/test/gmock-generated-function-mockers_test.cc:191:1: error: syntax error [syntaxError]
+TEST_F(FunctionMockerTest, MocksVoidFunction) {
+^
+vendor/googletest/googlemock/test/gmock-generated-internal-utils_test.cc:51:1: error: syntax error [syntaxError]
+TEST(MatcherTupleTest, ForSize0) {
+^
+vendor/googletest/googlemock/test/gmock-generated-matchers_test.cc:110:1: error: syntax error [syntaxError]
+TEST(ArgsTest, AcceptsZeroTemplateArg) {
+^
+vendor/googletest/googlemock/test/gmock-internal-utils_test.cc:78:1: error: syntax error [syntaxError]
+TEST(ConvertIdentifierNameToWordsTest, WorksWhenNameContainsDigits) {
+^
+vendor/googletest/googlemock/test/gmock-matchers_test.cc:224:1: error: syntax error [syntaxError]
+TEST(MatchResultListenerTest, StreamingWorks) {
+^
+vendor/googletest/googlemock/test/gmock-more-actions_test.cc:234:1: error: syntax error [syntaxError]
+TEST(InvokeTest, Nullary) {
+^
+vendor/googletest/googlemock/test/gmock-nice-strict_test.cc:204:1: error: syntax error [syntaxError]
+TEST(NiceMockTest, AllowsExpectedCall) {
+^
+vendor/googletest/googlemock/test/gmock-nice-strict_test.cc:114:1: error: syntax error [syntaxError]
+TEST(RawMockTest, WarningForUninterestingCall) {
+^
+vendor/googletest/googlemock/test/gmock-spec-builders_test.cc:120:1: error: syntax error [syntaxError]
+TEST(MockMethodTest, CanInstantiateWithIncompleteArgType) {
+^
+vendor/googletest/googlemock/test/gmock_ex_test.cc:57:1: error: syntax error [syntaxError]
+TEST(DefaultValueTest, ThrowsRuntimeErrorWhenNoDefaultValue) {
+^
+vendor/googletest/googlemock/test/gmock_leak_test_.cc:59:1: error: syntax error [syntaxError]
+TEST(LeakTest, LeakedMockWithExpectCallCausesFailureWhenLeakCheckingIsEnabled) {
+^
+vendor/googletest/googlemock/test/gmock_stress_test.cc:277:1: error: syntax error [syntaxError]
+TEST(StressTest, CanUseGMockWithThreads) {
+^
+vendor/googletest/googletest/samples/sample10_unittest.cc:98:1: error: syntax error [syntaxError]
+TEST(ListenersTest, DoesNotLeak) {
+^
+vendor/googletest/googletest/samples/sample3_unittest.cc:135:17: warning: Either the condition 'n!=NULL' is redundant or there is possible null pointer dereference: n. [nullPointerRedundantCheck]
+  EXPECT_EQ(1, *n);
+                ^
+vendor/googletest/googletest/samples/sample3_unittest.cc:134:17: note: Assuming that condition 'n!=NULL' is not redundant
+  ASSERT_TRUE(n != NULL);
+                ^
+vendor/googletest/googletest/samples/sample3_unittest.cc:133:18: note: Assignment 'n=q1_.Dequeue()', assigned value is 0
+  n = q1_.Dequeue();
+                 ^
+vendor/googletest/googletest/samples/sample3_unittest.cc:135:17: note: Null pointer dereference
+  EXPECT_EQ(1, *n);
+                ^
+vendor/googletest/googletest/samples/sample3_unittest.cc:141:17: warning: Either the condition 'n!=NULL' is redundant or there is possible null pointer dereference: n. [nullPointerRedundantCheck]
+  EXPECT_EQ(2, *n);
+                ^
+vendor/googletest/googletest/samples/sample3_unittest.cc:140:17: note: Assuming that condition 'n!=NULL' is not redundant
+  ASSERT_TRUE(n != NULL);
+                ^
+vendor/googletest/googletest/samples/sample3_unittest.cc:139:18: note: Assignment 'n=q2_.Dequeue()', assigned value is 0
+  n = q2_.Dequeue();
+                 ^
+vendor/googletest/googletest/samples/sample3_unittest.cc:141:17: note: Null pointer dereference
+  EXPECT_EQ(2, *n);
+                ^
+vendor/googletest/googletest/samples/sample5_unittest.cc:146:16: style: The function 'SetUp' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+  virtual void SetUp() {
+               ^
+vendor/googletest/googletest/samples/sample5_unittest.cc:67:16: note: Virtual function in base class
+  virtual void SetUp() {
+               ^
+vendor/googletest/googletest/samples/sample5_unittest.cc:146:16: note: Function in derived class
+  virtual void SetUp() {
+               ^
+vendor/googletest/googletest/samples/sample5_unittest.cc:184:17: warning: Either the condition 'n!=NULL' is redundant or there is possible null pointer dereference: n. [nullPointerRedundantCheck]
+  EXPECT_EQ(1, *n);
+                ^
+vendor/googletest/googletest/samples/sample5_unittest.cc:183:17: note: Assuming that condition 'n!=NULL' is not redundant
+  EXPECT_TRUE(n != NULL);
+                ^
+vendor/googletest/googletest/samples/sample5_unittest.cc:182:18: note: Assignment 'n=q1_.Dequeue()', assigned value is 0
+  n = q1_.Dequeue();
+                 ^
+vendor/googletest/googletest/samples/sample5_unittest.cc:184:17: note: Null pointer dereference
+  EXPECT_EQ(1, *n);
+                ^
+vendor/googletest/googletest/samples/sample5_unittest.cc:190:17: warning: Either the condition 'n!=NULL' is redundant or there is possible null pointer dereference: n. [nullPointerRedundantCheck]
+  EXPECT_EQ(2, *n);
+                ^
+vendor/googletest/googletest/samples/sample5_unittest.cc:189:17: note: Assuming that condition 'n!=NULL' is not redundant
+  EXPECT_TRUE(n != NULL);
+                ^
+vendor/googletest/googletest/samples/sample5_unittest.cc:188:18: note: Assignment 'n=q2_.Dequeue()', assigned value is 0
+  n = q2_.Dequeue();
+                 ^
+vendor/googletest/googletest/samples/sample5_unittest.cc:190:17: note: Null pointer dereference
+  EXPECT_EQ(2, *n);
+                ^
+vendor/googletest/googletest/samples/prime_tables.h:84:34: warning: Class 'PreCalculatedPrimeTable' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor]
+      : is_prime_size_(max + 1), is_prime_(new bool[max + 1]) {
+                                 ^
+vendor/googletest/googletest/samples/prime_tables.h:58:16: style: The function 'IsPrime' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+  virtual bool IsPrime(int n) const {
+               ^
+vendor/googletest/googletest/samples/prime_tables.h:48:16: note: Virtual function in base class
+  virtual bool IsPrime(int n) const = 0;
+               ^
+vendor/googletest/googletest/samples/prime_tables.h:58:16: note: Function in derived class
+  virtual bool IsPrime(int n) const {
+               ^
+vendor/googletest/googletest/samples/prime_tables.h:69:15: style: The function 'GetNextPrime' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+  virtual int GetNextPrime(int p) const {
+              ^
+vendor/googletest/googletest/samples/prime_tables.h:52:15: note: Virtual function in base class
+  virtual int GetNextPrime(int p) const = 0;
+              ^
+vendor/googletest/googletest/samples/prime_tables.h:69:15: note: Function in derived class
+  virtual int GetNextPrime(int p) const {
+              ^
+vendor/googletest/googletest/samples/prime_tables.h:89:16: style: The function 'IsPrime' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+  virtual bool IsPrime(int n) const {
+               ^
+vendor/googletest/googletest/samples/prime_tables.h:48:16: note: Virtual function in base class
+  virtual bool IsPrime(int n) const = 0;
+               ^
+vendor/googletest/googletest/samples/prime_tables.h:89:16: note: Function in derived class
+  virtual bool IsPrime(int n) const {
+               ^
+vendor/googletest/googletest/samples/prime_tables.h:93:15: style: The function 'GetNextPrime' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+  virtual int GetNextPrime(int p) const {
+              ^
+vendor/googletest/googletest/samples/prime_tables.h:52:15: note: Virtual function in base class
+  virtual int GetNextPrime(int p) const = 0;
+              ^
+vendor/googletest/googletest/samples/prime_tables.h:93:15: note: Function in derived class
+  virtual int GetNextPrime(int p) const {
+              ^
+vendor/googletest/googletest/samples/sample8_unittest.cc:53:9: warning: Class 'HybridPrimeTable' does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s). [noCopyConstructor]
+      : on_the_fly_impl_(new OnTheFlyPrimeTable),
+        ^
+vendor/googletest/googletest/samples/sample8_unittest.cc:53:9: warning: Class 'HybridPrimeTable' does not have a operator= which is recommended since it has dynamic memory/resource allocation(s). [noOperatorEq]
+      : on_the_fly_impl_(new OnTheFlyPrimeTable),
+        ^
+vendor/googletest/googletest/samples/sample8_unittest.cc:62:16: style: The function 'IsPrime' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+  virtual bool IsPrime(int n) const {
+               ^
+vendor/googletest/googletest/samples/prime_tables.h:48:16: note: Virtual function in base class
+  virtual bool IsPrime(int n) const = 0;
+               ^
+vendor/googletest/googletest/samples/sample8_unittest.cc:62:16: note: Function in derived class
+  virtual bool IsPrime(int n) const {
+               ^
+vendor/googletest/googletest/samples/sample8_unittest.cc:69:15: style: The function 'GetNextPrime' overrides a function in a base class but is not marked with a 'override' specifier. [missingOverride]
+  virtual int GetNextPrime(int p) const {
+              ^
+vendor/googletest/googletest/samples/prime_tables.h:52:15: note: Virtual function in base class
+  virtual int GetNextPrime(int p) const = 0;
+              ^
+vendor/googletest/googletest/samples/sample8_unittest.cc:69:15: note: Function in derived class
+  virtual int GetNextPrime(int p) const {
+              ^
+vendor/googletest/googletest/samples/sample9_unittest.cc:93:1: error: syntax error [syntaxError]
+TEST(CustomOutputTest, PrintsMessage) {
+^
+vendor/googletest/googletest/src/gtest-death-test.cc:891:0: information: Skipping configuration 'GTEST_EXTRA_DEATH_TEST_COMMAND_LINE_ARGS_;GTEST_HAS_DEATH_TEST' since the value of 'GTEST_EXTRA_DEATH_TEST_COMMAND_LINE_ARGS_' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        GTEST_EXTRA_DEATH_TEST_COMMAND_LINE_ARGS_();
+^
+vendor/googletest/googletest/src/gtest-death-test.cc:1100:30: style: Variable 'child_pid' is reassigned a value before the old one has been used. [redundantAssignment]
+  if (use_fork && (child_pid = fork()) == 0) {
+                             ^
+vendor/googletest/googletest/src/gtest-death-test.cc:1092:15: note: child_pid is assigned
+    child_pid = clone(&ExecDeathTestChildMain, stack_top, SIGCHLD, &args);
+              ^
+vendor/googletest/googletest/src/gtest-death-test.cc:1100:30: note: child_pid is overwritten
+  if (use_fork && (child_pid = fork()) == 0) {
+                             ^
+vendor/googletest/googletest/src/gtest-death-test.cc:1009:26: error: Uninitialized variable: dummy [uninitvar]
+  StackLowerThanAddress(&dummy, &result);
+                         ^
+vendor/googletest/googletest/src/gtest-death-test.cc:1100:7: style: Condition 'use_fork' is always true [knownConditionTrueFalse]
+  if (use_fork && (child_pid = fork()) == 0) {
+      ^
+vendor/googletest/googletest/src/gtest-death-test.cc:178:0: information: Skipping configuration 'GTEST_HAS_DEATH_TEST;GTEST_KILLED_BY_SIGNAL_OVERRIDE_;GTEST_OS_WINDOWS=0' since the value of 'GTEST_KILLED_BY_SIGNAL_OVERRIDE_' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    if (GTEST_KILLED_BY_SIGNAL_OVERRIDE_(signum_, exit_status, &result)) {
+^
+vendor/googletest/googletest/src/gtest-death-test.cc:939:7: style: struct member 'ExecDeathTestArgs::close_fd' is never used. [unusedStructMember]
+  int close_fd;       // File descriptor to close; the read end of a pipe
+      ^
+vendor/googletest/googletest/src/gtest-death-test.cc:208:0: information: Skipping configuration 'GTEST_HAS_DEATH_TEST;WCOREDUMP' since the value of 'WCOREDUMP' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  if (WCOREDUMP(exit_code)) {
+^
+vendor/googletest/googletest/src/gtest-filepath.cc:108:0: information: Skipping configuration 'PATH_MAX' since the value of 'PATH_MAX' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  char cwd[GTEST_PATH_MAX_ + 1] = { '\0' };
+^
+vendor/googletest/googletest/src/gtest-filepath.cc:108:0: information: Skipping configuration '_XOPEN_PATH_MAX' since the value of '_XOPEN_PATH_MAX' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  char cwd[GTEST_PATH_MAX_ + 1] = { '\0' };
+^
+vendor/googletest/googletest/src/gtest-port.cc:928:1: error: There is an unknown macro here somewhere. Configuration is required. If GTEST_DISABLE_MSC_WARNINGS_PUSH_ is a macro then please configure it. [unknownMacro]
+GTEST_DISABLE_MSC_WARNINGS_PUSH_(4996)
+^
+vendor/googletest/googletest/src/gtest-port.cc:1193:0: information: Skipping configuration 'GTEST_GET_BOOL_FROM_ENV_' since the value of 'GTEST_GET_BOOL_FROM_ENV_' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  return GTEST_GET_BOOL_FROM_ENV_(flag, default_value);
+^
+vendor/googletest/googletest/src/gtest-port.cc:1206:0: information: Skipping configuration 'GTEST_GET_INT32_FROM_ENV_' since the value of 'GTEST_GET_INT32_FROM_ENV_' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  return GTEST_GET_INT32_FROM_ENV_(flag, default_value);
+^
+vendor/googletest/googletest/src/gtest-port.cc:1231:0: information: Skipping configuration 'GTEST_GET_STRING_FROM_ENV_' since the value of 'GTEST_GET_STRING_FROM_ENV_' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  return GTEST_GET_STRING_FROM_ENV_(flag, default_value);
+^
+vendor/googletest/googletest/src/gtest.cc:4615:22: style: Condition 'in_subprocess_for_death_test' is always false [knownConditionTrueFalse]
+  const int repeat = in_subprocess_for_death_test ? 1 : GTEST_FLAG(repeat);
+                     ^
+vendor/googletest/googletest/src/gtest.cc:4575:39: note: Assignment 'in_subprocess_for_death_test=false', assigned value is 0
+  bool in_subprocess_for_death_test = false;
+                                      ^
+vendor/googletest/googletest/src/gtest.cc:4615:22: note: Condition 'in_subprocess_for_death_test' is always false
+  const int repeat = in_subprocess_for_death_test ? 1 : GTEST_FLAG(repeat);
+                     ^
+vendor/googletest/googletest/src/gtest.cc:4156:34: error: Null pointer dereference: static_cast<volatile int*>(NULL) [nullPointer]
+      *static_cast<volatile int*>(NULL) = 1;
+                                 ^
+vendor/googletest/googletest/src/gtest.cc:391:0: information: Skipping configuration 'GTEST_CUSTOM_GET_ARGVS_' since the value of 'GTEST_CUSTOM_GET_ARGVS_' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  return GTEST_CUSTOM_GET_ARGVS_();
+^
+vendor/googletest/googletest/src/gtest.cc:5372:0: information: Skipping configuration 'GTEST_CUSTOM_INIT_GOOGLE_TEST_FUNCTION_' since the value of 'GTEST_CUSTOM_INIT_GOOGLE_TEST_FUNCTION_' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  GTEST_CUSTOM_INIT_GOOGLE_TEST_FUNCTION_(argc, argv);
+^
+vendor/googletest/googletest/src/gtest.cc:5382:0: information: Skipping configuration 'GTEST_CUSTOM_INIT_GOOGLE_TEST_FUNCTION_' since the value of 'GTEST_CUSTOM_INIT_GOOGLE_TEST_FUNCTION_' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  GTEST_CUSTOM_INIT_GOOGLE_TEST_FUNCTION_(argc, argv);
+^
+vendor/googletest/googletest/src/gtest.cc:4443:0: information: Skipping configuration 'GTEST_CUSTOM_TEST_EVENT_LISTENER_' since the value of 'GTEST_CUSTOM_TEST_EVENT_LISTENER_' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    listeners()->Append(new GTEST_CUSTOM_TEST_EVENT_LISTENER_());
+^
+vendor/googletest/googletest/src/gtest.cc:4581:0: information: Skipping configuration 'GTEST_EXTRA_DEATH_TEST_CHILD_SETUP_;GTEST_HAS_DEATH_TEST' since the value of 'GTEST_EXTRA_DEATH_TEST_CHILD_SETUP_' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    GTEST_EXTRA_DEATH_TEST_CHILD_SETUP_();
+^
+vendor/googletest/googletest/src/gtest.cc:4921:0: information: Skipping configuration 'GTEST_OS_STACK_TRACE_GETTER_' since the value of 'GTEST_OS_STACK_TRACE_GETTER_' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    os_stack_trace_getter_ = new GTEST_OS_STACK_TRACE_GETTER_;
+^
+vendor/googletest/googletest/src/gtest.cc:194:0: information: Skipping configuration 'GTEST_TEST_FILTER_ENV_VAR_' since the value of 'GTEST_TEST_FILTER_ENV_VAR_' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  const char* const testbridge_test_only = getenv(GTEST_TEST_FILTER_ENV_VAR_);
+^
+vendor/googletest/googletest/test/gtest-death-test_test.cc:133:3: warning: Member variable 'TestForDeathTest::should_die_' is not initialized in the constructor. [uninitMemberVar]
+  TestForDeathTest() : original_dir_(FilePath::GetCurrentDir()) {}
+  ^
+vendor/googletest/googletest/test/gtest-death-test_test.cc:968:23: warning: Member variable 'MockDeathTestFactory::test_deleted_' is not initialized in the constructor. [uninitMemberVar]
+MockDeathTestFactory::MockDeathTestFactory()
+                      ^
+vendor/googletest/googletest/test/gtest-death-test_test.cc:597:28: style: Argument '(++x)==4' to function DieIf is always 1 [constArgument]
+  EXPECT_DEATH(DieIf((++x) == 4), "DieIf");
+                           ^
+vendor/googletest/googletest/test/gtest-death-test_test.cc:596:11: note: Assignment 'x=3', assigned value is 3
+  int x = 3;
+          ^
+vendor/googletest/googletest/test/gtest-death-test_test.cc:597:28: note: Argument '(++x)==4' to function DieIf is always 1
+  EXPECT_DEATH(DieIf((++x) == 4), "DieIf");
+                           ^
+vendor/googletest/googletest/test/gtest-filepath_test.cc:110:1: error: syntax error [syntaxError]
+TEST(IsEmptyTest, ReturnsTrueForEmptyPath) {
+^
+vendor/googletest/googletest/test/gtest-linked_ptr_test.cc:77:1: error: syntax error [syntaxError]
+TEST_F(LinkedPtrTest, GeneralTest) {
+^
+vendor/googletest/googletest/test/gtest-listener_test.cc:158:1: error: syntax error [syntaxError]
+TEST_F(ListenerTest, DoesFoo) {
+^
+vendor/googletest/googletest/test/gtest-message_test.cc:45:1: error: syntax error [syntaxError]
+TEST(MessageTest, DefaultConstructor) {
+^
+vendor/googletest/googletest/test/gtest-options_test.cc:69:1: error: syntax error [syntaxError]
+TEST(XmlOutputTest, GetOutputFormatDefault) {
+^
+vendor/googletest/googletest/test/gtest-param-test_test.cc:270:3: style: 'DogAdder::operator=' should return 'DogAdder &'. [operatorEq]
+  DogAdder operator=(const DogAdder& other) {
+  ^
+vendor/googletest/googletest/test/gtest-param-test_test.cc:308:3: style: 'IntWrapper::operator=' should return 'IntWrapper &'. [operatorEq]
+  IntWrapper operator=(const IntWrapper& other) {
+  ^
+vendor/googletest/googletest/test/gtest-param-test_test.cc:552:7: style: Redundant initialization for 'gen'. The initialized value is overwritten before it is read. [redundantInitialization]
+  gen = gen2;
+      ^
+vendor/googletest/googletest/test/gtest-param-test_test.cc:550:27: note: gen is initialized
+  ParamGenerator<int> gen = Values(1, 2);
+                          ^
+vendor/googletest/googletest/test/gtest-param-test_test.cc:552:7: note: gen is overwritten
+  gen = gen2;
+      ^
+vendor/googletest/googletest/test/gtest-param-test_test.cc:144:5: performance: Prefer prefix ++/-- operators for non-primitive types. [postfixOperator]
+    it++;
+    ^
+vendor/googletest/googletest/test/gtest-param-test_test.cc:164:5: performance: Prefer prefix ++/-- operators for non-primitive types. [postfixOperator]
+    it++;
+    ^
+vendor/googletest/googletest/test/gtest-param-test_test.cc:199:3: performance: Prefer prefix ++/-- operators for non-primitive types. [postfixOperator]
+  it++;
+  ^
+vendor/googletest/googletest/test/gtest-param-test_test.cc:218:3: performance: Prefer prefix ++/-- operators for non-primitive types. [postfixOperator]
+  it++;
+  ^
+vendor/googletest/googletest/test/gtest-port_test.cc:77:1: error: syntax error [syntaxError]
+TEST(IsXDigitTest, ReturnsFalseForNarrowNonAscii) {
+^
+vendor/googletest/googletest/test/gtest-port_test.cc:392:0: information: Skipping configuration 'GTEST_USES_SIMPLE_RE' since the value of 'GTEST_USES_SIMPLE_RE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  EXPECT_TRUE(GTEST_USES_SIMPLE_RE);
+^
+vendor/googletest/googletest/test/gtest-printers_test.cc:253:1: error: syntax error [syntaxError]
+TEST(PrintEnumTest, AnonymousEnum) {
+^
+vendor/googletest/googletest/test/gtest-test-part_test.cc:58:1: error: syntax error [syntaxError]
+TEST_F(TestPartResultTest, ConstructorWorks) {
+^
+vendor/googletest/googletest/test/gtest-tuple_test.cc:46:1: error: syntax error [syntaxError]
+TEST(tuple_element_Test, ReturnsElementType) {
+^
+vendor/googletest/googletest/test/gtest-typed-test_test.cc:163:1: error: syntax error [syntaxError]
+TYPED_TEST(NumericTest, DefaultIsZero) {
+^
+vendor/googletest/googletest/test/gtest-typed-test_test.cc:334:1: error: syntax error [syntaxError]
+TYPED_TEST_P(NumericTest, DefaultIsZero) {
+^
+vendor/googletest/googletest/test/gtest-unittest-api_test.cc:114:1: error: syntax error [syntaxError]
+TEST(ApiTest, UnitTestImmutableAccessorsWork) {
+^
+vendor/googletest/googletest/test/gtest-unittest-api_test.cc:102:1: error: syntax error [syntaxError]
+TYPED_TEST(TestCaseWithCommentTest, Dummy) {}
+^
+vendor/googletest/googletest/test/gtest_catch_exceptions_test_.cc:153:9: warning: Class CxxExceptionInDestructorTest is not safe, destructor throws exception [exceptThrowInDestructor]
+        throw std::runtime_error("Standard C++ exception"));
+        ^
+vendor/googletest/googletest/test/gtest_environment_test.cc:111:1: error: syntax error [syntaxError]
+TEST(FooTest, Bar) {
+^
+vendor/googletest/googletest/test/gtest_filter_unittest_.cc:50:1: error: syntax error [syntaxError]
+TEST_F(FooTest, Abc) {
+^
+vendor/googletest/googletest/test/gtest_output_test_.cc:538:1: error: syntax error [syntaxError]
+TEST_F(MixedUpTestCaseTest, FirstTestFromNamespaceFoo) {}
+^
+vendor/googletest/googletest/test/gtest_premature_exit_test.cc:80:1: error: syntax error [syntaxError]
+TEST_F(PrematureExitDeathTest, FileExistsDuringExecutionOfDeathTest) {
+^
+vendor/googletest/googletest/test/gtest_repeat_test.cc:94:1: error: syntax error [syntaxError]
+TEST(FooTest, ShouldFail) {
+^
+vendor/googletest/googletest/test/gtest_shuffle_test_.cc:51:1: error: syntax error [syntaxError]
+TEST_F(A, A) {}
+^
+vendor/googletest/googletest/test/gtest_sole_header_test.cc:43:1: error: syntax error [syntaxError]
+TEST(NoFatalFailureTest, ExpectNoFatalFailure) {
+^
+vendor/googletest/googletest/test/gtest_stress_test.cc:127:1: error: syntax error [syntaxError]
+TEST(StressTest, CanUseScopedTraceAndAssertionsInManyThreads) {
+^
+vendor/googletest/googletest/test/gtest_unittest.cc:5362:25: error: syntax error [syntaxError]
+INSTANTIATE_TEST_CASE_P(, CodeLocationForTESTP, Values(0));
+                        ^
+vendor/googletest/googletest/src/gtest-death-test.cc:833:0: style: The function 'AssumeRole' is never used. [unusedFunction]
+
+^
+vendor/googletest/googlemock/src/gmock-cardinalities.cc:143:0: style: The function 'AtMost' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/src/gtest-port.cc:1037:0: style: The function 'CaptureStdout' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/src/gtest.cc:1437:0: style: The function 'CmpHelperEQ' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/src/gtest.cc:1479:0: style: The function 'CmpHelperGE' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/src/gtest.cc:1482:0: style: The function 'CmpHelperGT' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/src/gtest.cc:1473:0: style: The function 'CmpHelperLE' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/src/gtest.cc:1476:0: style: The function 'CmpHelperLT' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/src/gtest.cc:1470:0: style: The function 'CmpHelperNE' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/src/gtest.cc:1503:0: style: The function 'CmpHelperSTRCASEEQ' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/src/gtest.cc:1533:0: style: The function 'CmpHelperSTRCASENE' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/src/gtest.cc:1487:0: style: The function 'CmpHelperSTREQ' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/src/gtest.cc:1519:0: style: The function 'CmpHelperSTRNE' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/samples/sample6_unittest.cc:48:0: style: The function 'CreatePrimeTable < OnTheFlyPrimeTable >' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/samples/sample6_unittest.cc:53:0: style: The function 'CreatePrimeTable < PreCalculatedPrimeTable >' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/src/gtest.cc:1428:0: style: The function 'DoubleLE' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/src/gtest.cc:1362:0: style: The function 'DoubleNearPredFormat' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/src/gtest.cc:3382:0: style: The function 'EscapeXmlText' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/src/gtest-death-test.cc:219:0: style: The function 'ExitedUnsuccessfully' is never used. [unusedFunction]
+
+^
+vendor/googletest/googlemock/src/gmock-matchers.cc:328:0: style: The function 'FindPairing' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/src/gtest.cc:1421:0: style: The function 'FloatLE' is never used. [unusedFunction]
+
+^
+vendor/googletest/googlemock/src/gmock-matchers.cc:127:0: style: The function 'FormatMatcherDescription' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/src/gtest.cc:1346:0: style: The function 'GetBoolAssertionFailureMessage' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/src/gtest-port.cc:1047:0: style: The function 'GetCapturedStdout' is never used. [unusedFunction]
+
+^
+vendor/googletest/googlemock/src/gmock-internal-utils.cc:94:0: style: The function 'GetFailureReporter' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/src/gtest.cc:1711:0: style: The function 'IsHRESULTFailure' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/src/gtest.cc:1704:0: style: The function 'IsHRESULTSuccess' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/src/gtest.cc:1618:0: style: The function 'IsNotSubstring' is never used. [unusedFunction]
+
+^
+vendor/googletest/googlemock/src/gmock-cardinalities.cc:77:0: style: The function 'IsSatisfiedByCallCount' is never used. [unusedFunction]
+
+^
+vendor/googletest/googlemock/src/gmock-cardinalities.cc:81:0: style: The function 'IsSaturatedByCallCount' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/src/gtest.cc:1606:0: style: The function 'IsSubstring' is never used. [unusedFunction]
+
+^
+vendor/googletest/googlemock/src/gmock-spec-builders.cc:59:0: style: The function 'LogWithLocation' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/src/gtest.cc:2543:0: style: The function 'MakeAndRegisterTestInfo' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/src/gtest-death-test.cc:1294:0: style: The function 'ParseInternalRunDeathTestFlag' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/samples/sample4.cc:44:0: style: The function 'Print' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/src/gtest-printers.cc:114:0: style: The function 'PrintBytesInObjectTo' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/src/gtest-printers.cc:354:0: style: The function 'PrintStringTo' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/src/gtest-printers.cc:360:0: style: The function 'PrintWideStringTo' is never used. [unusedFunction]
+
+^
+vendor/googletest/googlemock/src/gmock-internal-utils.cc:78:0: style: The function 'ReportFailure' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/src/gtest.cc:2561:0: style: The function 'ReportInvalidTestCaseType' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/test/gtest-death-test_test.cc:1021:0: style: The function 'SetUpTestCase' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/test/gtest-death-test_test.cc:1026:0: style: The function 'TearDownTestCase' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/src/gtest-port.cc:1058:0: style: The function 'TempDir' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/src/gtest-printers.cc:309:0: style: The function 'UniversalPrintArray' is never used. [unusedFunction]
+
+^
+vendor/googletest/googletest/src/gtest-death-test.cc:810:0: style: The function 'Wait' is never used. [unusedFunction]
+
+^
+vendor/googletest/googlemock/src/gmock_main.cc:44:0: style: The function '_tmain' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
