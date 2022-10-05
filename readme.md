@@ -16,8 +16,8 @@ Part 1:
 Driver & Navigator: Kumara Ritvik Oruganti
 
 Part 2:
-Driver: Dhinesh Rajasekaran
-Navigator: Shailesh Pranav Rajendran
+ - Driver: Dhinesh Rajasekaran
+ - Navigator: Shailesh Pranav Rajendran
 
 ## Standard install via command-line
 ```
