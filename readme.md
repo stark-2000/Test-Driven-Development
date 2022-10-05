@@ -16,8 +16,8 @@ Part 1:
  - Driver & Navigator: Kumara Ritvik Oruganti
 
 Part 2:
- - Driver: [Dhinesh Rajasekaran] (https://github.com/stark-2000?tab=repositories)
- - Navigator: [Shailesh Pranav Rajendran] (https://github.com/shaileshpranav?tab=repositories)
+ - Driver: [Dhinesh Rajasekaran](https://github.com/stark-2000?tab=repositories)
+ - Navigator: [Shailesh Pranav Rajendran](https://github.com/shaileshpranav?tab=repositories)
 
 
 ## Standard install via command-line
