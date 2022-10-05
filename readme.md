@@ -13,7 +13,11 @@ Simple starter C++ project with:
 
 ## Authors
 Part 1:
-Driver and Navigator: [Kumara Ritvik Oruganti](https://www.github.com/okritvik)
+Driver: Shailesh Pranav Rajendran
+Navigator: Dhinesh Rajasekaran
+
+Part 2: 
+Driver & Navigator: Kumara Ritvik Oruganti
 
 ## Standard install via command-line
 ```
