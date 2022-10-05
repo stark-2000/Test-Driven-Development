@@ -12,12 +12,12 @@ Simple starter C++ project with:
 - Test Driven Development
 
 ## Authors
-Part 1:
-Driver: Shailesh Pranav Rajendran
-Navigator: Dhinesh Rajasekaran
-
-Part 2: 
+Part 1: 
 Driver & Navigator: Kumara Ritvik Oruganti
+
+Part 2:
+Driver: Dhinesh Rajasekaran
+Navigator: Shailesh Pranav Rajendran
 
 ## Standard install via command-line
 ```
