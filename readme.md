@@ -13,7 +13,7 @@ Simple starter C++ project with:
 
 ## Authors
 Part 1: 
-Driver & Navigator: Kumara Ritvik Oruganti
+ - Driver & Navigator: Kumara Ritvik Oruganti
 
 Part 2:
  - Driver: Dhinesh Rajasekaran
