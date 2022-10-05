@@ -27,25 +27,25 @@ int main() {
     std::cin >> user_in;
     std::unique_ptr<PID_Controller> pid;
     if (user_in == "y" || user_in == "Y") {
-        std::cout << "Enter the initial velocity: ";
+        std::cout << "Enter the Initial Velocity: ";
         std::cin >> initial_vel;
-        std::cout << "\n Enter the time step: ";
+        std::cout << "\nEnter the Time Step: ";
         std::cin >> dt;
-        std::cout << "\n Enter the Target Velocity: ";
+        std::cout << "\nEnter the Target Velocity: ";
         std::cin >> req_vel;
 
-        std::cout << "\n Enter the Proportional Gain Kp: ";
+        std::cout << "\nEnter the Proportional Gain Kp: ";
         std::cin >> kp;
-        std::cout << "\n Enter the Derivative Gain Kd: ";
+        std::cout << "\nEnter the Derivative Gain Kd: ";
         std::cin >> kd;
-        std::cout << "\n Enter the Integral Gain Ki: ";
+        std::cout << "\nEnter the Integral Gain Ki: ";
         std::cin >> ki;
         pid = std::make_unique<PID_Controller>(kp, kd, ki, dt);
 
     } else {
-        std::cout << "Enter the initial velocity: ";
+        std::cout << "Enter the Initial Velocity: ";
         std::cin >> initial_vel;
-        std::cout << "\n Enter the Target Velocity: ";
+        std::cout << "\nEnter the Target Velocity: ";
         std::cin >> req_vel;
         pid = std::make_unique<PID_Controller>();
     }
@@ -53,7 +53,7 @@ int main() {
     bool flag = pid -> set_required_velocity(req_vel);
     if (flag) {
         double final_vel = pid -> compute_pid(initial_vel, req_vel);
-        std::cout << "The final Velocity Reached is : " << final_vel << "\n";
+        std::cout << "The Final Velocity Reached is : " << final_vel << "\n";
     }
     return 0;
 }
